@@ -1,7 +1,7 @@
 # HPG Coursework 03
 Coursework from HPG Programme in University of Leeds.
 
-# Option Deferred Shading
+# Deferred Shading
 ## Features
 Use PBR lighting model.
 

@@ -3,9 +3,9 @@ Coursework from HPG Programme in University of Leeds.
 
 # Option Deferred Shading
 ## Features
-Use PBR shader for lighting only.
+Use PBR lighting model.
 
-5 lights
+5 lights(press 1,2,3,4,5 to turn them on or off)
 
 4 intermediate textures:
 - 3 color attachments (albedo, normal, material)
@@ -36,13 +36,3 @@ lut::image_barrier(
             VK_PIPELINE_STAGE_VERTEX_SHADER_BIT,
             { VK_IMAGE_ASPECT_DEPTH_BIT,0, 1, 0, 1 });
 ```
-# Code changed
-In FramebufferHelper.h/.cpp
-
-Add FramebufferPack class to make it easier to create framebuffer with multiple attachments.
-
-Add SwapChainFramebufferPack to manage multiple framebuffers for a swapchain.
-
-In DescriptorSetHelper.h/.cpp
-
-Write small functions to help creating descriptor set.
